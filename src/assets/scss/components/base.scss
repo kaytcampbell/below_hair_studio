@@ -1,0 +1,16 @@
+.section-padding{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+i{
+  padding-right: 10px;
+}
+ul{
+  list-style-type: none;
+}
+image{
+  @include breakpoint(small only){
+    width: 80%;
+  }
+}

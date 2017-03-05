@@ -1,0 +1,24 @@
+.hero{
+  height: 600px;
+  position: relative;
+  @include breakpoint(small only){
+    height: 400px;
+  }
+
+  &__content{
+    margin-top: 200px;
+  }
+
+  &--home{
+    background-image: url('../img/wood-bg.jpg');
+    width: 100%;
+    background-size: cover;
+
+    img{
+      @include absolute-center;
+      @include breakpoint(small only){
+        max-width: 300px;
+      }
+    }
+  }
+}
